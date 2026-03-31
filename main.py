@@ -1,31 +1,25 @@
-#variables
-#H
-try:
-    length = int(input("Enter the length of the the object as a integer: "))
-    width = int(input("Enter the width of the the object as a integer: "))
-    height = int(input("Enter the height of the the object as a integer: "))
-except:
-    ValueError
-    print("Invalid Input")
-
-#Function 1
-# Returns Area of Rectangle
-#H
-def rect_area(length, width):
-    a = length*width
-    return a
 
 
-#Function 2
-# Returns Surface Area of Rectangular Solid
+# Project requires TWO functions:
+# 1. rect_area (length, width) which will return the area of a rectangle
+# 2. rect_solid_area (length, width, height) which will return the area of a solid rectangular object
 
+# The following four lines are just there to make the code work without errors until functions are added
+def rect_solid_area(x, y, z):
+   return 1
+length = 1; width = 1; height = 1
+rect_solid_area (length, width, height)
 
 # Request the dimension of a solid rectangular object
-#H
-try:
-    print (f"Length = {length} Width = {width} Height = {height}")
-    print("Total Surface Area = ", str(rect_surface_area(length, width, height)))
-    print("Area of the rectangle: " + str(rect_area(length, width)))
-except:
-    NameError
-    
+length = int(input("Enter the length of the the object as in integer: "))
+width = int(input("Enter the width of the the object as in integer: "))
+height = int(input("Enter the height of the the object as in integer: "))
+
+surface_area = rect_solid_area(length, width, height)
+
+print("Length = ", length, "Width = ", width, "Height = ", height)
+print("Total Surface Area = ", surface_area)
+
+
+#end
+
