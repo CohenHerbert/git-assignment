@@ -1,3 +1,4 @@
+#got it, Cohen
 import matplotlib.pyplot as plot
 # set up your lists
 numlist = [9, 6, 5, 3]
